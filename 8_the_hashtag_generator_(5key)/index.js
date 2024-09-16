@@ -27,6 +27,27 @@ console.log(generateHashtag("    Hello     World   "));
 console.log(generateHashtag("#")); //##
 console.log(generateHashtag("")); //false
 
+//решение Лёни
+
+// function generateHashtag(str) {
+//   let a = str
+//     .split(" ")
+//     .reduce(
+//       (summ, elem) =>
+//         elem == ""
+//           ? summ
+//           : (summ = summ + elem[0].toUpperCase() + elem.slice(1)),
+//       ""
+//     );
+//   return a.length > 139 || a == "" ? false : "#" + a;
+// }
+// console.log(generateHashtag("#")); ////##
+// console.log(generateHashtag("")); //false
+// console.log(generateHashtag(" Hello there thanks for trying my Kata"));
+// console.log(generateHashtag("    Hello     World   "));
+// console.log(generateHashtag("#")); //##
+// console.log(generateHashtag("")); //false
+
 //решение какого-то индусятины
 
 // function generateHashtag(str) {
